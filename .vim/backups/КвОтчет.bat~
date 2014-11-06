@@ -1,0 +1,2 @@
+cd c:\Program Files\MySQL\MySQL Server 4.1\bin\
+mysql -u root -pUti100S12 -e "source c:\DISTRIB\MySQL_4_1_18\KV.txt"

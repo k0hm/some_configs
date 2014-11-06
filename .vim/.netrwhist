@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/media/media/cyansrc/frameworks/base/data/etc'
+let g:netrw_dirhist_2='/home/andrew/.rvm/gems/ruby-1.9.3-p125/gems/win32ole-pp-1.2.0'
+let g:netrw_dirhist_3='/home/andrew/.rvm/gems/ruby-1.9.3-p125/gems/win32ole-pp-1.2.0/lib'
+let g:netrw_dirhist_4='/media/media/msm_android/kernel/drivers/net/wireless/bcm4329'
+let g:netrw_dirhist_5='/home/andrew/css'
+let g:netrw_dirhist_6='/etc/apt/apt.conf.d'
+let g:netrw_dirhist_7='/home/andrew/projects/wotta/sweet/lib'
