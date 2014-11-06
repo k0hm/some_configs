@@ -1,2 +1,1 @@
-some_configs
-============
+some configuration files of software i used
