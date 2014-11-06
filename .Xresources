@@ -1,0 +1,124 @@
+!Xft settings 
+Xft.dpi: 96
+Xft.antialias: true
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintfull
+
+!{{{ Urxvt
+URxvt.font: -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+
+urxvt*depth: 32
+urxvt*background: rgba:0000/0000/0200/c800
+
+*background: #232323
+*foreground: #bfbfbf
+
+! terminal colors
+*color0:  #000000
+*color1: #9e1828
+*color2: #aece92
+*color3: #968a38
+*color4: #412171
+*color5: #963c59
+*color6: #418179
+*color7: #bebebe
+*color8: #245645
+*color9: #982b2b
+*color10: #89b83f
+*color11: #efef60
+*color12: #2b4f98
+*color13: #826ab1
+*color14: #a1cdcd
+*color15: #dedede
+
+URxvt.saveLines: 50000
+
+URxvt*scrollBar: false
+URxvt.jumpScroll: true
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+URxvt.utmpInhibit: false
+
+URxvt.cursorBlink: false
+
+URxvt.loginShell: true
+URxvt.termName: rxvt-unicode
+URxvt.cutchars: "()*,<>[]{}|"
+URxvt.matcher.button: 1
+!URxvt.matcher.pattern.1: \\bwww\\.[\\w-]+\\.[\\w./?&@#-]*[\\w/-]
+!URxvt.visualBell: true
+URxvt.urgentOnBell: true
+URxvt.keysym.M-o: perl:matcher
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,selection-autotransform
+URxvt.perl-ext: default,matcher
+URxvt.urlLauncher: x-www-browser
+!URxvt.selection-autotransform.0: s/^([^:[:space:]]+):(\\d+):?$/vi +$2 \\Q$1\\E\\x0d/
+!}}}
+!{{{ XTERM
+XTerm*utf8: 3
+XTerm*font: -xos4-terminus-medium-r-normal--12-120-72-72-c-60-iso10646-1
+!XTerm*faceName: Droid Sans Mono
+!XTerm*faceSize: 14
+
+XTerm*VT100.colorMode: on
+XTerm*VT100.colorBDMode: on
+XTerm*VT100.colorULMode: on
+XTerm*VT100.dynamicColors: on
+XTerm*VT100.cursorColor: white
+XTerm*VT100.titeInhibit: true
+
+!XTerm*internalBorder: 3
+XTerm*highlightSelection: true
+XTerm*scrollBar: false
+
+! I love Alt + number :D
+XTerm*eightBitInput: true
+XTerm*metaSendsEscape: true
+!}}}
+
+
+! xscreensaver ---------------------------------------------------------------
+
+!font settings
+xscreensaver.Dialog.headingFont:        -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-dina-medium-r-*-*-12-*-*-*-*-*-*-*
+xscreensaver.passwd.passwdFont:         -*-dina-bold-r-*-*-12-*-*-*-*-*-*-*
+!general dialog box (affects main hostname, username, password text)
+xscreensaver.Dialog.foreground:         #ffffff
+xscreensaver.Dialog.background:         #111111
+xscreensaver.Dialog.topShadowColor:     #111111
+xscreensaver.Dialog.bottomShadowColor:  #111111
+xscreensaver.Dialog.Button.foreground:  #666666
+xscreensaver.Dialog.Button.background:  #ffffff
+!username/password input box and date text colour
+xscreensaver.Dialog.text.foreground:    #666666
+xscreensaver.Dialog.text.background:    #ffffff
+xscreensaver.Dialog.internalBorderWidth:24
+xscreensaver.Dialog.borderWidth:        20
+xscreensaver.Dialog.shadowThickness:    2
+!timeout bar (background is actually determined by Dialog.text.background)
+xscreensaver.passwd.thermometer.foreground:  #ff0000
+xscreensaver.passwd.thermometer.background:  #000000
+xscreensaver.passwd.thermometer.width:       8
+!datestamp format--see the strftime(3) manual page for details
+xscreensaver.dateFormat:    %I:%M%P %a %b %d, %Y
+
+URxvt*loginShell: true
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.keysym.C-Delete: perl:matcher:last
+URxvt.keysym.M-Delete: perl:matcher:list
+URxvt.colorUL: #4682B4
+
+URxvt.keysym.C-Up:     perl:font-size:increase
+URxvt.keysym.C-Down:   perl:font-size:decrease
+URxvt.keysym.C-S-Up:   perl:font-size:incglobal
+URxvt.keysym.C-S-Down: perl:font-size:decglobal
